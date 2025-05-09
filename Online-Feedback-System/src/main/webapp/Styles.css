@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364), url("https://nmiet.ac.in/wp-content/uploads/2024/10/2-3-1.png");
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    animation: fadeIn 1s ease-in-out;
+    color: #f4f4f4;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Navigation Bar */
+nav {
+	background: linear-gradient(to right, #1f4037, #99f2c8);
+    font-size: 32px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    animation: slideIn 1s ease-in-out;
+    border-bottom: 2px solid #ecf0f1;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-100%);opacity: 0; }
+    to { transform: translateY(0); opacity: 1;}
+}
+
+nav a {
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+nav a:hover {
+     background-color: rgba(255, 255, 255, 0.2);
+     color: #f39c12;
+     transform: scale(1.1);
+}
+
+/* Form Container */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.97);
+    font-size: 38px;
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 58%;
+    margin-top: 6%;
+    padding: 40px;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+    animation: popIn 1s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    color:#2C3E50;
+}
+
+@keyframes popIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.form-container:hover {
+    transform: scale(1.03);
+}
+
+/* Inputs & Buttons */
+.form-container input, textarea, select {
+    width: 85%;
+    height: 50px;
+    margin: 15px 0;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f7f9f9;
+    border: 2px solid #bdc3c7;
+    transition: all 0.3s ease;
+    padding: 10px;
+}
+
+.form-container input:focus, textarea:focus, select:focus {
+    background-color: #e3f2fd;
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.4);
+    outline: none;
+    border-color:#3498db;
+}
+
+.form-container button {
+    width: 55%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition:all 0.3s ease;
+    font-weight:bold;
+}
+
+.form-container button:hover {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    transform: scale(1.1);
+}
+
+/* About Section */
+.about {
+    font-size: 30px;
+    width: 100%;
+    height: 80vh;
+    padding: 50px;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #ecf0f1;
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+}
+
+.about img {
+    width: 420px;
+    height: 360px;
+    margin-right: 20px;
+    border-radius: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.about img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Check Table */
+.checkTable {
+    background-color: #fdfefe;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.checkTable img {
+    height: 100px;
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.checkTable img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.checkTable td, th {
+    padding: 10px 60px;
+    border-bottom: 1px solid #ccc;
+    color:black;
+}
